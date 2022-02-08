@@ -22,7 +22,7 @@ const serverConfig = {
         assetModuleFilename: 'images/[hash][ext][query]',
     },
 
-    externals: [nodeExternals()],
+    externals: (NODE_ENV === 'development')?[nodeExternals()]:[],
 
     resolve: {
         extensions: ['.js', '.jsx']
