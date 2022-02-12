@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      
+
 jobs:
   deploy:
     name: Deploy Dev
@@ -29,7 +29,7 @@ jobs:
         mkdir s3
         cp -r scripts s3
         cp -r dist s3
-        cp -r build s3
+        cp -r public s3
         cp appspec.yml s3
 
     - name: checking what's in s3 folder
