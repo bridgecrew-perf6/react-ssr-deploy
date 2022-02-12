@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - master
-
-name: Project Deployment Dev
-
+      
 jobs:
   deploy:
     name: Deploy Dev
