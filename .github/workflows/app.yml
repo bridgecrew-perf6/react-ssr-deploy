@@ -50,9 +50,5 @@ jobs:
 
     - name: running codedeploy
       run: |
-        aws deploy create-deployment \ 
-        --application-name react-ssr \
-        --deployment-config-name CodeDeployDefault.AllAtOnce \
-        --deployment-group-name prod \
-        --s3-location bucket=react-ssr-dalideco,bundleType=zip,key=react-ssr.zip
+        aws deploy create-deployment --application-name react-ssr --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name prod --s3-location bucket=react-ssr-dalideco,bundleType=zip,key=react-ssr.zip
  
