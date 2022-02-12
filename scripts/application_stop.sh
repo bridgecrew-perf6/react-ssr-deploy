@@ -9,4 +9,4 @@ sudo systemctl disable NodeServer.service
 echo "kiling anything in the port"
 kill -9 $(lsof -t -i:3000)
 
-echo "Stopped existing node server -->
+echo "Stopped existing node server -->"
