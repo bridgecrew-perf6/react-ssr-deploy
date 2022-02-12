@@ -7,13 +7,13 @@ sudo chmod -R 777 /home/ec2-user/express-app
 cd /home/ec2-user/express-app
 
 #install node modules
-echo "<--installing dependendices"
-npm install
-echo "installed dependencies-->"
+# echo "<--installing dependendices"
+# npm install
+# echo "installed dependencies-->"
 
-echo "<--building application"
-npm run build
-echo "built application-->"
+# echo "<--building application"
+# npm run build
+# echo "built application-->"
 
 #start our node app in the background
 echo "<--starting app"
