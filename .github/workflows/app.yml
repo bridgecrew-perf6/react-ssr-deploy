@@ -34,6 +34,9 @@ jobs:
 
     - name: checking what's in s3 folder
       run: ls s3
+
+    - name: zipping files
+      run: zip -r react-ssr.zip s3
     
 
 
